@@ -138,7 +138,7 @@ div.signup:hover,div.signin:hover{
         word-spacing: 6px;
         border-radius: 10px;
         padding: 2%;
-        font-family:sans-serif;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 140%;
         background-color: rgba(235, 235, 247, 0.959);
         color: black;
@@ -191,7 +191,42 @@ div.signup:hover,div.signin:hover{
           transition: 1s;
     }
 
+    #doSomething{
+        background-color: rgb(61, 155, 135); 
+        color: white; 
+        border-radius: 3px; 
+        margin-left:4%; 
+        margin-bottom: -1%; 
+        padding: 0.5%; 
+        width: 45%; 
+        height: 15%;
+    }
+
+    #afterNaveBar{
+        width: 60%; margin-top: 3%; margin-left: 2%;
+    }
+
     @media (max-width:600px){
+
+  div.param{
+  grid-area: param;
+  padding:5px;
+  margin-left:5%;
+  width: 50px;
+  transition: 3s;
+}
+div.about{
+    grid-area: about;
+    padding:5px;
+    margin-left:-20%;
+    width: 100px;
+    transition: 3s;
+}
+
+        #afterNaveBar{
+        width: 60%; margin-top: 3%; margin-left: 2%;
+        font-size: 120%;
+    }
         .articleItself{
         margin-right: 2%;
         margin-left: 2%;
@@ -201,18 +236,43 @@ div.signup:hover,div.signin:hover{
         word-spacing: 6px;
         border-radius: 10px;
         padding: 2%;
-        font-family:sans-serif;
-        font-size: 140%;
+        font-family:serif;
+        font-size: 100%;
         background-color: rgba(235, 235, 247, 0.959);
         color: black;
         line-height: 37px;
     }
 
+    #doSomething{
+        background-color: rgb(61, 155, 135); 
+        color: white; 
+        border-radius: 3px; 
+        margin-left:4%; 
+        margin-bottom: -1%; 
+        padding: 0.5%; 
+        width: 45%; 
+        height: 15%;
+        font-size: 100%;
+    }
+
+    .articleContent{
+          display:grid;
+          grid-template-rows: repeat(1fr,5);
+          grid-template-areas: 'articleContent1 articleContent2 articleContent3 articleContent4 articleContent5';
+          grid-column-gap: 5px;
+          margin-right: 10%;
+          margin-left: 10%;
+          font-size: 100%;
+          font-family:serif;
+          font-weight:200;
+          
+      }
+
     div.tony{
   grid-area: tony;
   margin-left:-7%;
   padding-top: -25%;
-  padding:5px;
+  padding:3px;
   font-size: 110%;
 }
 
@@ -226,22 +286,22 @@ div.signup:hover,div.signin:hover{
     <div class='tonyPro'>
         <div class='tony' >James Proo</div>
         <div class='param' onclick="alert('Coming soon thanks')">&#9776;</div>
-        <div class='about' onclick="alert('Coming soon thanks')">About</div>
+        <div class='about' onclick="alert('This page was developed by Joel Fokou')">About</div>
         <div class='webstyle' onclick="alert('Coming soon thanks')">Help</div>
        <div class='home'><a style='text-decoration:none; color:unset;' href='index1.html'>Home</a></div>
    </div>
 
-    <h1 style="width: 60%; margin-top: 3%; margin-left: 2%;"> Don’t be a programmer, Be a problem solver</h1>
+    <h1 id='afterNaveBar'> Don’t be a programmer, Be a problem solver</h1>
     <hr style="margin-left: 5%; margin-left: 5%;">
     <div class="articleContent">
         <div class="articleContent1">By Fokou Joel | </div>
         <div class="articleContent2" id="expiredDate"></div>
-        <div  class="articleContent3"><img src="vue.jpg" alt="" width="auto" height="20px"> 12345  | </div> 
+        <div  class="articleContent3"><img src="vue.jpg" alt="" width="auto" height="20px"> 72744  | </div> 
         <a href="#form"><img class="articleContent4" src="message.jpg" alt="" width="auto" height="20px"></a>
         <div class="articleContent5 "> |  7 minutes read</div>
     </div>
 
-    <h3 style="background-color: rgb(61, 155, 135); color: white; border-radius: 3px; margin-left:4%; margin-bottom: -1%; padding: 0.5%; width: 250px; height: 40px;">Do something that matter don't just be a programmer</h3>
+    <h3 id='doSomething'>Do something that matters don't just be a programmer</h3>
 
     <div class="articleItself">
 
