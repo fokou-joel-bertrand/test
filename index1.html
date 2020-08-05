@@ -18,7 +18,20 @@ div.tonyPro{
   box-shadow: black 5px 5px 5px;
     background-image: linear-gradient(to right, rgba(13, 206, 158, 0.479), rgba(24, 24, 197, 0.521), rgba(155, 33, 179, 0.459));
 }
+
+@keyframes example {
+  0%   { left:0px; top:0px;transform: rotate(90deg);}
+  25%  { left:100px; top:0px; color:blue; transform: rotate(90deg);}
+  50%  { left:200px; top:200px;color:black; transform: rotate(135deg);}
+  75%  { left:0px; top:200px; color:rgb(235, 21, 181); transform: rotate(90deg);}
+  100% { left:0px; top:0px; text-transform: initial;transform: rotate(360deg);}
+}
+
+/* The element to apply the animation to */
 div.tony{
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
   grid-area: tony;
   margin-left:-7%;
   padding-top: -25%;
@@ -150,13 +163,22 @@ div.signup:hover,div.signin:hover{
           grid-area: item5;
           align-self: center;
     }
+
+    @keyframes example2 {
+  0%   { left:0px; top:0px;color:rgb(21, 78, 235);}
+  25%  { left:-100px; top:-200px;}
+  50%  { left:-100px; top:-100px; color:rgb(235, 21, 181);}
+  100% { left:0px; top:0px;}
+}
     #wlcMessage{
         text-align: center;
         color: rgb(247, 165, 15);
         font-weight: 100;
         font-size: 260%;
-        font-family: fantasy;
+        font-family: cursive;
         transition: 2s;
+        animation-name: example2;
+        animation-duration: 3s;
 
     }
     #welcomeButton{
@@ -175,6 +197,7 @@ div.signup:hover,div.signin:hover{
         font-family: serif;
       
     }
+
     #welcomePage{
         background-color: rgba(0, 0, 0, 0.856);
         position: fixed;
@@ -336,13 +359,13 @@ div.webstyle{
         <hr class="bibloigraphy">
         <p><strong>Name:</strong>          FOKOU</p>
         <p><strong>Surname:</strong>       JOEL BERTRAND</p> 
-        <p><strong>Phone Number:</strong>   +237 673 47 00 23 /  +237 690 89 88 06</p>
+        <p><strong>Phone Numbers:</strong>   +237 673 47 00 23 /  +237 690 89 88 06</p>
         <p><strong>Country :</strong>       CAMEROON (West Africa)</p>
-        <p><strong>Twon :</strong>          BUEA</p>
-        <p><strong>Gmail :</strong>         joelfokou99@gmail.com</p>
+        <p><strong>Town :</strong>          BUEA</p>
+        <p><strong>Gmail / yahoo :</strong>         joelfokou99@gmail.com / bertrandfokou98@yahoo.cm</p>
         <p><strong>GitHub account:</strong> <a target="blank" style="text-decoration: none;" href="http://www.joel-bertrand-fokou"> https://github.com/fokou-joel-bertrand</a></p>
         <p><strong>Time-zone :</strong>     UTC + 1</p>
-        <p><strong>Occupation:</strong>     Software Developer, Designer, Network Configurator (Computer Engineering Student )</p>
+        <p><strong>Occupation:</strong>     Software Developer, Designer, Network Configurator & network and computer security enhancement (Cryptography)(Computer Engineering Student )</p>
 
     </div><br>
 
@@ -386,8 +409,13 @@ div.webstyle{
 
         <h2>Electronics</h2>
         <div  class="electronic">
-        <p>Microcontroller programming <progress value="67" max="100"></progress>67%</p>
-        <p>Arduino programming <progress value="45" max="100"></progress>45%</p>
+        <p>Microcontrollers programming (Assembly & C languages) <progress value="67" max="100"></progress>67%</p>
+        <p>Arduino programming (with C) <progress value="45" max="100"></progress>45%</p>
+        </div>
+        <h2>Cryptography</h2>
+        <div class="electronic">
+            
+            <p>Symetric & Asymetric cryptography techniques <progress value="40" max="100"></progress>40%</p>
         </div>
     </div><br>
 
@@ -464,7 +492,7 @@ div.webstyle{
       });
 
       document.getElementById('welcomeButton').addEventListener('click',()=>{
-            
+            wlcPage.style.transition = '3s';
             wlcPage.style.display = 'none';
       })
 
