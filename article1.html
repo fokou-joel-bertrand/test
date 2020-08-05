@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div.tonyPro{
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: rgb(34, 59, 80);
+  color: white;
+  font-weight: bold;
+  grid-template-areas: 'tony . . . . .  . signup'
+                       'param about  webstyle . . . . home';
+  grid-column-gap: -30%;
+  box-shadow: black 5px 5px 5px;
+    background-image: linear-gradient(to right, rgba(13, 206, 158, 0.479), rgba(24, 24, 197, 0.521), rgba(155, 33, 179, 0.459));
+}
+div.tony{
+  grid-area: tony;
+  margin-left:-7%;
+  padding-top: -25%;
+  padding:5px;
+  font-size: 200%;
+  -webkit-text-stroke: 1px;
+}
+
+div.param{
+  grid-area: param;
+  padding:5px;
+  margin-left:5%;
+  width: 50px;
+  transition: 3s;
+}
+div.about{
+    grid-area: about;
+    padding:5px;
+    margin-left:-50%;
+    width: 100px;
+    transition: 3s;
+}
+div.article{
+    grid-area: article;
+    padding:5px;
+    margin-left:-50%;
+    width: 100px;
+    transition: 3s;
+}
+div.webstyle{
+    grid-area: webstyle;
+    padding:5px;
+    margin-left:-50%;
+    width: 100px;
+    transition: 3s;
+}
+/* div.signin{
+    grid-area: signin;
+    padding:5px;
+     margin-right: -40%; 
+} */
+div.signup{
+    grid-area: signup;
+    padding:5px;
+
+}
+div.home{
+  grid-area: home;
+  padding:5px;
+  transition: 3s;
+}
+ div.param:hover,div.about:hover,div.webstyle:hover, div.article:hover{
+      color:orange;background-color: rgb(82, 5, 75);
+      transition: 3s;
+} 
+
+div.signup:hover,div.signin:hover{
+  
+    color: orange;
+    border-radius: 2px;
+    background-color: green;
+    cursor: pointer;
+    margin-top: 2px;
+    padding-bottom:2px;
+
+}
+
+        body{background-color: whitesmoke;
+            /* background-attachment:fixed;
+        background-image:url(images.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover; */
+        margin: 0;
+
+        
+         }
+  
+      .articleContent{
+          display:grid;
+          grid-template-rows: repeat(1fr,5);
+          grid-template-areas: 'articleContent1 articleContent2 articleContent3 articleContent4 articleContent5';
+          grid-column-gap: 5px;
+          margin-right: 50%;
+          margin-left: 10%;
+          font-size: 110%;
+          font-family: serif;
+          font-weight:200;
+          
+      }
+      .articleContent1{
+          grid-area: articleContent1;
+          align-self: center;
+    }
+      .articleContent2{
+          grid-area: articleContent2;
+          align-self: center;
+    }
+      .articleContent3{
+          grid-area: articleContent3;
+          align-self: center;
+    }
+      .articleContent4{
+          grid-area: articleContent4;
+          align-self: center;
+    }
+      .articleContent5{
+          grid-area: articleContent5;
+          align-self: center;
+    }
+
+    .articleItself{
+        margin-right: 25%;
+        margin-left: 4%;
+        margin-top: 2%;
+        font-weight: 500;
+        letter-spacing: 3px;
+        word-spacing: 6px;
+        border-radius: 10px;
+        padding: 2%;
+        font-family:sans-serif;
+        font-size: 140%;
+        background-color: rgba(235, 235, 247, 0.959);
+        color: black;
+        line-height: 37px;
+    }
+
+    
+      .appreciation{
+          display:grid;
+          grid-template-rows: repeat(1fr,5);
+          grid-template-areas: 'appreciation1 appreciation2 appreciation3 appreciation4 appreciation5';
+          grid-column-gap: 5px;
+          margin-right: 50%;
+          margin-left: 10%;
+          border-radius: 5px;
+          padding: 5px;
+          
+      }
+      .appreciation1{
+          grid-area: appreciation1;
+          align-self: center;
+    }
+      .appreciation2{
+          grid-area: appreciation2;
+          align-self: center;
+    }
+      .appreciation3{
+          grid-area: appreciation3;
+          align-self: center;
+    }
+      .appreciation4{
+          grid-area: appreciation4;
+          align-self: center;
+    }
+      .appreciation5{
+          grid-area: appreciation5;
+          align-self: center;
+          text-align:center;
+    }
+    .appreciation1, .appreciation2, .appreciation3, .appreciation4, .appreciation5{
+          margin: 2%;
+    }
+
+    .glad:hover,.sad:hover,.angry:hover,.supprise:hover,.funny:hover{
+          transition: 1.5s;
+          height: 40px;
+          width: auto;
+    }
+    .glad,.sad,.angry,.supprise,.funny{
+          transition: 1s;
+    }
+
+    @media (max-width:600px){
+        .articleItself{
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-top: 2%;
+        font-weight: 500;
+        letter-spacing: 3px;
+        word-spacing: 6px;
+        border-radius: 10px;
+        padding: 2%;
+        font-family:sans-serif;
+        font-size: 140%;
+        background-color: rgba(235, 235, 247, 0.959);
+        color: black;
+        line-height: 37px;
+    }
+
+    div.tony{
+  grid-area: tony;
+  margin-left:-7%;
+  padding-top: -25%;
+  padding:5px;
+  font-size: 110%;
+}
+
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class='tonyPro'>
+        <div class='tony' >James Proo</div>
+        <div class='param' onclick="alert('Coming soon thanks')">&#9776;</div>
+        <div class='about' onclick="alert('Coming soon thanks')">About</div>
+        <div class='webstyle' onclick="alert('Coming soon thanks')">Help</div>
+       <div class='home'><a style='text-decoration:none; color:unset;' href='index1.html'>Home</a></div>
+   </div>
+
+    <h1 style="width: 60%; margin-top: 3%; margin-left: 2%;"> Don’t be a programmer, Be a problem solver</h1>
+    <hr style="margin-left: 5%; margin-left: 5%;">
+    <div class="articleContent">
+        <div class="articleContent1">By Fokou Joel | </div>
+        <div class="articleContent2" id="expiredDate"></div>
+        <div  class="articleContent3"><img src="vue.jpg" alt="" width="auto" height="20px"> 12345  | </div> 
+        <a href="#form"><img class="articleContent4" src="message.jpg" alt="" width="auto" height="20px"></a>
+        <div class="articleContent5 "> |  7 minutes read</div>
+    </div>
+
+    <h3 style="background-color: rgb(61, 155, 135); color: white; border-radius: 3px; margin-left:4%; margin-bottom: -1%; padding: 0.5%; width: 250px; height: 40px;">Do something that matter don't just be a programmer</h3>
+
+    <div class="articleItself">
+
+
+        <p><em><strong>I got a lot of questions about programming!!<br>
+        But I don’t think, they’re the right questions to ask.</strong></em><br>
+        
+        
+        <p style="margin: 0% 10% 0% 10%; ">Like how many languages do I need to learn!!<br>
+        What language do I need to learn to get to company X ?<br>
+        What’s the difference between A and B ?<br>
+        And which makes more money ?<br>
+        What are the exact steps I need to take to become Z ?<br>
+        What kind of program should I write to build up my resume ?</p><br>
+        <em><strong>So why don’t I like these questions!</strong></em><br>
+        <p style="margin: 0% 10% 0% 10%; ">Because it feels like the people who are asking these questions.
+        They are learning how to program just for the sake of learning how to program but programming is just a tool being a programmer.<br>
+        For me means you write code to automate things or to make things perform certain actions. For example programming a refrigerator to turn on the light when you open the door.<br>
+        <!-- When you think about it, programming is actually a kind of boring. You’re just giving a series of instructions to a machine over and over again until you get it right.
+        I don’t want to speak for all of you but I think if the pay wasn’t great.
+        I don’t think a lot of you would spend hours and hours every night in front of your computer.<br> -->
+        Trying to learn how to code or to just debug your program sometimes we get caught up learning languages or doing coding challenges or fantasizing about you know working for these big tech companies that we forget.</p><br>
+        <h4>Why we wanted to learn programming in the first place ?</h4>
+        <p style="margin: 0% 10% 0% 10%; ">You wanted to program because you saw the amazing things that can be built using programming.<br><br>
+        <em> don’t just learn how to program!<br>
+        Build something that matters.<br>
+        Build something that means.<br>
+        Build something that solves a problem.<br>
+        You’re a problem-solver a creator, an innovator; you’re not a programmer.</em><br><br>
+        Programming is just a tool in your arsenal to build something amazing
+        You can be analytical creative empathetic and programming allows you to express those qualities of yourself. But programming in itself is nothing special it’s like a pencil it can mark stuff down.<br>
+        If you press on the pen so hard enough. That’s it. But with a pencil you can write novels, draw beautiful portraits, build plans for a skyscraper
+        or anything eliminated; only by your imagination.<br>
+        You don’t learn how to program to get into Google you learn how to program to build something meaningful, something that helps real people with real problems. I’m partnered with Wikimedia today to talk about a global initiative which calls for developers to build something impactful and have a positive change across the world.<br><br>
+        As you know there are hundreds and hundreds of natural disasters every year, like hurricanes earthquakes floods volcanoes and wildfires. Those affect numerous lives and causes tremendous damage to many families around the world.
+        If you strive for real impact we desperately need you.<br>This is why 2020 call for code global challenge is a competition that asks people like you to build solutions to improve what we can do to reduce disruptive impact of these natural, disasters.
+        We need all kinds of technologies you like working on blockchains, build secure supply networks, to help distribute aid to the people in need.
+        </p><br><br>
+        <em><strong>So, don’t forget.<br>
+        Don’t be a programmer<br>
+        Be a problem solver</em></strong></p>
+        
+    </div>
+    
+    <p style="margin: 2% 0% 2% 10%; font-size: 25px;"><em>What Do You Think ?</em></p>
+    <div class="appreciation">
+    <div class="appreciation1"><img class="glad" src="glad.jpg" alt="" width="auto" height="30px"><p>UpVote</p></div>
+    <div class="appreciation2"><img class="supprise" src="supprise.jpg" alt="" width="auto" height="30px"><p>Supprise</p></div>
+    <div class="appreciation3"><img class="sad"  src="Sad.jpg" alt="" width="auto" height="30px"><p>Sad</p></div>
+    <div class="appreciation4"><img class="angry" src="angry.jpg" alt="" width="auto" height="30px"><p>Angry</p></div>
+    <div class="appreciation5"><img class="funny" src="funny.jpg" alt="" width="auto" height="30px"><p>Funny</p></div>
+    </div>
+ 
+    <script>
+
+
+    var see = document.getElementById('see');
+
+    window.addEventListener('load', function1);
+
+    var setters = 1590787430129;
+
+     function function1 (){
+        setInterval(()=>{
+
+         let date = Date.now();
+
+         var state = 0;
+
+         var text = '';
+         
+         let minute = parseInt((date-setters)/(1000*60));
+         let hour = parseInt((date-setters)/(1000*3600));
+         let day = parseInt((date-setters)/(1000*3600*24));
+         let month = parseInt((date-setters)/(1000*3600*24*30));
+         let year = parseInt((date-setters)/(1000*3600*24*30*12));
+
+         if(year > 1)
+         {
+             state = year;
+             text = 'Years';
+         }else if(year < 1 && month >= 1){
+             state = month;
+             text = 'Months';
+
+         }else if(year < 1 && month < 1 && day >= 1){
+             state = day;
+             text = 'Days';
+         }else if(year < 1 && month < 1 && day < 1 && hour >=1){
+             state = hour;
+             text = 'Hours';
+         }else if(year < 1 && month < 1 && day < 1 && hour < 1 && minute>=1){
+            state = minute;
+            text = 'Minutes'; 
+         }
+         else{
+             state = 0;
+             text = 'Seconds';
+         }
+        document.getElementById('expiredDate').innerHTML = state+` `+text+` Ago`+` | `;
+
+        },2000);
+     }
+
+    </script>
+    
+</body>
+</html>
