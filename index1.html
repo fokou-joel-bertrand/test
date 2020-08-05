@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div.tonyPro{
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: rgb(34, 59, 80);
+  color: white;
+  font-weight: bold;
+  grid-template-areas: 'tony . . . . . . . signup'
+                       'param about article webstyle . . . . home';
+  grid-column-gap: -30%;
+  box-shadow: black 5px 5px 5px;
+    background-image: linear-gradient(to right, rgba(13, 206, 158, 0.479), rgba(24, 24, 197, 0.521), rgba(155, 33, 179, 0.459));
+}
+div.tony{
+  grid-area: tony;
+  margin-left:-7%;
+  padding-top: -25%;
+  padding:5px;
+  font-size: 200%;
+  -webkit-text-stroke: 1px;
+}
+
+div.param{
+  grid-area: param;
+  padding:5px;
+  margin-left:5%;
+  width: 50px;
+  transition: 3s;
+}
+div.about{
+    grid-area: about;
+    padding:5px;
+    margin-left:-50%;
+    width: 100px;
+    transition: 3s;
+}
+div.article{
+    grid-area: article;
+    padding:5px;
+    margin-left:-50%;
+    width: 100px;
+    transition: 3s;
+}
+div.webstyle{
+    grid-area: webstyle;
+    padding:5px;
+    margin-left:-50%;
+    width: 100px;
+    transition: 3s;
+}
+/* div.signin{
+    grid-area: signin;
+    padding:5px;
+     margin-right: -40%; 
+} */
+div.signup{
+    grid-area: signup;
+    padding:5px;
+
+}
+div.home{
+  grid-area: home;
+  padding:5px;
+  transition: 3s;
+}
+ div.param:hover,div.about:hover,div.webstyle:hover, div.article:hover{
+      color:orange;background-color: rgb(82, 5, 75);
+      transition: 3s;
+} 
+
+div.signup:hover,div.signin:hover{
+  
+    color: orange;
+    border-radius: 2px;
+    background-color: green;
+    cursor: pointer;
+    margin-top: 2px;
+    padding-bottom:2px;
+
+}
+
+        body{background-color: whitesmoke;
+        margin: 0;
+
+        
+         }
+
+        hr.bibloigraphy{
+            margin-right: 3%;
+            font-weight: 900;
+            height: 20px;
+            background-color: rgb(5, 50, 133);
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .contactme, .experience, .skill, .schoolpassage{
+            margin-left: 2%;
+            margin-right: 25%; 
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 0%;
+            padding-bottom: 1%;
+            font-weight:300;
+            font-size: 120%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgba(42, 126, 165, 0.041);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.425) 5px 5px 5px;
+        }
+        h1{
+            text-align: left;
+        }
+
+        .frontend, .backend, .framework, .electronic, .database, .mobile{
+            background-color: rgba(174, 175, 123, 0.568);
+            margin: 2%;
+            padding: 2%;
+            border-radius: 8px;
+        }
+
+        .database{
+             background-color: rgba(28, 121, 128, 0.37);
+        }
+      .content{
+          display:grid;
+          grid-template-columns: 12fr 1fr 1fr 1fr 1fr;
+          grid-template-areas: 'item1 item2 item3 item4 item5';
+          grid-column-gap: 5px;
+          
+      }
+      .item1{
+          grid-area: item1;
+          align-self: center;
+          border-radius: 20px;
+          margin-top: 1%;
+    }
+      .item2{
+          grid-area: item2;
+          align-self: center;
+    }
+      .item3{
+          grid-area: item3;
+          align-self: center;
+    }
+      .item4{
+          grid-area: item4;
+          align-self: center;
+    }
+      .item5{
+          grid-area: item5;
+          align-self: center;
+    }
+    #wlcMessage{
+        text-align: center;
+        color: rgb(247, 165, 15);
+        font-weight: 100;
+        font-size: 260%;
+        font-family: fantasy;
+        transition: 2s;
+
+    }
+    #welcomeButton{
+        transition: 2s;
+        text-align: center;
+        border-radius: 15px;
+        padding: 1%;
+        color: white;
+        font-weight: 200;
+        background-color: rgb(36, 25, 196);
+        font-size: 130%;
+    }
+    #welcomeButton:hover{
+        transition: 2s;
+        background-color: green;
+        font-family: serif;
+      
+    }
+    #welcomePage{
+        background-color: rgba(0, 0, 0, 0.856);
+        position: fixed;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20%;
+        padding-right: 20%;
+        padding-left: 20%;
+
+    }
+
+
+    </style>
+</head>
+<body id="contactme">
+    <div id="welcomePage">
+        
+        <center>
+        <marquee style="color: green; font-size: 290%; font-weight: 500;font-family: serif;">Coding...</marquee>
+        <p id="wlcMessage">Welcome to Joel Fokou's Porfolio</p>
+        <button id="welcomeButton">Navigate</button>
+        </center>
+    </div>
+
+    <div class='tonyPro'>
+        <div class='tony'>James Proo</div>
+        <div class='param' onclick="alert('Coming soon thanks')">&#9776;</div>
+        <div class='about' onclick="alert('Coming soon thanks')">About</div>
+        <div class='article' onclick="alert('Coming soon thanks')">Articles</div>
+        <div class='webstyle' onclick="alert('Coming soon thanks')">Help</div>
+      
+   </div>
+
+    <div>
+    <div class="content">
+    <img src="me.jpeg" alt="Can't load" width="100px" height="auto" class="item1">
+    <img src="youtube.png" alt="Can't load" width="50px" height="auto" class="item2">
+    <img src="facebook.png" alt="Can't load" width="50px" height="auto" class="item3">
+    <img src="yahoo.png" alt="Can't load" width="50px" height="auto" class="item4">
+    <img src="git.png" alt="Can't load" width="50px" height="auto" class="item5">
+    </div><br>
+    <hr>
+    <h1 style='margin-left:2%;'>My Bibliography</h1> </div>
+    <hr>
+    <div class="contactme">
+        <h1>Contact Me</h1>
+        <hr class="bibloigraphy">
+        <p><strong>Name:</strong>          FOKOU</p>
+        <p><strong>Surname:</strong>       JOEL BERTRAND</p> 
+        <p><strong>Phone Number:</strong>   +237 673 47 00 23 /  +237 690 89 88 06</p>
+        <p><strong>Country :</strong>       CAMEROON (West Africa)</p>
+        <p><strong>Twon :</strong>          BUEA</p>
+        <p><strong>Gmail :</strong>         joelfokou99@gmail.com</p>
+        <p><strong>GitHub account:</strong> <a target="blank" style="text-decoration: none;" href="http://www.joel-bertrand-fokou"> http://www.joel-bertrand-fokou</a></p>
+        <p><strong>Time-zone :</strong>     UTC + 1</p>
+        <p><strong>Occupation:</strong>     Software Developer, Designer, Network Configurator (Computer Engineering Student )</p>
+
+    </div><br>
+
+    <div class="skill">
+        <h1 id="skill">Skills</h1>
+        <hr class="bibloigraphy">
+        <h3>Frontend</h3>
+        <div class="frontend">
+        <p> CSS3 <progress value="81" max="100"></progress>81%</p>
+        <p> HTML5 <progress value="88" max="100"></progress>88%</p>
+        <div> <p>JavaScript<progress value="86" max="100"></progress>86%</p> 
+              <h3> JavaScript Libraries </h3>
+              <p> ReactJS<progress value="60" max="100"></progress> 60% </p>
+              <p> JQeury  & JQuery UI <progress value="75" max="100"></progress>75% </p>
+        </div><br>
+        </div>
+
+        <h3>backend</h3>
+        <div class="backend">
+        <p> PHP   <progress value="79" max="100"></progress> 79% </p>
+        <p>NodeJs<progress value="40" max="100"></progress>40%</p>
+        <p>Python<progress value="40" max="100"></progress>52%</p> <br>
+        <h3>Database</h3>
+        <div class="database">
+        <p>MySQL<progress value="75" max="100"></progress>75%</p>
+        <p>Oracle<progress value="30" max="100"></progress>30%</p>
+        <p>SQL<progress value="80" max="100"></progress>80%</p>
+        </div>
+        </div>
+        <h3>Mobile & Desktop programming</h3>
+        <div class="mobile">
+         <p>Java : <progress value="80" max="100"></progress>70%</p>
+         <p>C/C++: <progress value="80" max="100"></progress>90%</p>
+        </div>
+        <h3>FrameWorks & IDEs <h3>
+        <div class="framework">
+        <p>Laravel <progress value="45" max="100"></progress>45%</p>
+        <p>Android Studio<progress value="32" max="100"></progress>32%</p>
+        <p>Qt (C++library)<progress value="45" max="100"></progress>55%</p>
+       </div>
+
+        <h2>Electronics</h2>
+        <div  class="electronic">
+        <p>Microcontroller programming <progress value="67" max="100"></progress>67%</p>
+        <p>Arduino programming <progress value="45" max="100"></progress>45%</p>
+        </div>
+    </div><br>
+
+     
+    <div class="experience">
+
+        <h1 id="experience">Experience</h1>
+        <hr class="bibloigraphy"> 
+          <p>
+              <h2>Passion for software development</h2>
+
+              When I was in high school, I was really impressed by many amazing things that we can do using programming languages. It was so amazing to see someone write some line of code and it is able to solve real life problem. I was asking my self how can I be like that person and make some powerfull tools to bring out solutions in to a real life problem using computer program. Therfore I start searching and I jumed in the right place to get start with this wonderfull thing.
+
+              <h2>Begining with programming</h2>
+
+              I started programming in 2014 with C language, after some months, I was able to write some algorithms for and complex datastructure programs and build some basic applications.
+              Just after that start C++ programming and just some few month, I start with QT (C++ librabry for GUI) And I come out with some basic applications that help people a lot <a style="text-decoration:none;" href="#soft"> created by me.</a>
+
+             <h3>Web techonology</h3>
+             I started in web development with HTML5 to build static web pages and with CSS3 to put some styles to thoses pages. I did amazing thing with it but I notice that for it to be dynamic, in addition to tha, I should go toward a web programmig languages. I then began coding with JavaScript language (frontend) and I create some dynamic and usefull web pages. But while programming I notice that there is something lacking for it to be so powerfull, In occurence the backend( I began therefore with PHP, MySQL & SQL). I enhanced my development in this field by leaning also ReactJS, Jquery JQuery UI, NodeJs (JavaScript libraries) and Laravel framework(PHP framework).
+
+             <h3>Mobile & destop programming</h3>
+             In 2018 I statetd with mobile development(Java, Android Studio) and Desktop App(C++ and QT for GUI).
+
+             <h2> Colaboration </h2>
+
+             <h3>*Wikimedia Foundation</h3>
+                 I started work with Wikimedia Fouandation in 2019 as a software developer
+                 I fixed many bugges there and gave proposals as well. And it is really helping improve my programming experience.
+            <h3>*Mlapack</h3>
+            I started work with it in 2019. Here I fixed bugges and solve issues. With this organization I really undertood how far one could go with C++ programming and its library QT.
+              
+              <h2 id="soft">I developed many software applications</h2>
+
+              <p><strong> High School student Recorder: </strong> This application keeps track of all student information for high school students (I use Java language).</p>
+              <p><strong>Travel Agency Online Reservation: </strong> This Application is an online travel reservation for a terrestrial agency which allow you to make a reservation online for a give travel anywhere in a country.</p>
+              <p><strong>University Student Registration:</strong> This application allow  university student the register online, pay fees online, as well as semester results.</p>
+
+             <h2>Others</h2>
+             I'm a fan of sports activities like football, dansing, and many others.
+ 
+          </p>
+
+    </div><br>
+
+    <div class="schoolpassage">
+        <h1 id="schoolpassage">School passage</h1>
+        <hr class="bibloigraphy">
+        <h3>* 2002 - 2004 Nursery</h3>
+        <p> Yaounde Mendog Nursery School:<strong>Very good qualification</strong></p>
+        <h3>* 2004 - 2010 Primary School</h3>
+        <p>Dschang Primary School:  
+            <strong>Congratulations and five honour tables</strong></p> 
+        <h3>* 2010 - 2016 High School:</h3>
+        <p> Dschang Government Bilingal High School (I read Computer Science): 
+            <strong> GPA : 3.54/4  +  six honour tables</strong></p>
+        <h3>* Internship</h3>
+        <p>July 2016 - August 2016 I went for and internship in <em>Seven Academy</em> institute (Douala) and got <strong> a certificate of a good software developer</strong></p>
+        <div><h3>* 2017 - 2020 university:</h3>
+            <p>2017 - 2018 Computer science university of Dschang. <strong>GPA 3.3 / 4</strong></p>
+            <p>2018 - 2019 Computer Engineering(Faculty of Engineering & Techonlogy (FET)) first year university of Buea. <strong> GPA 3.6 / 4 </strong></p>
+            <p>2019 - 2020 Computer Engineering(Faculty of Engineering & Techonlogy (FET)) second year university of Buea GPA. <strong>3.67 / 4</strong></p>
+        </div>
+
+    </div>
+
+    <script>
+
+      let wlcPage = document.getElementById('welcomePage');
+      
+      window.addEventListener('load',()=>{
+          wlcPage.style.width = window.screen.availWidth+'px';
+          wlcPage.style.height = window.screen.availHeight+'px';
+      });
+
+      document.getElementById('welcomeButton').addEventListener('click',()=>{
+            
+            wlcPage.style.display = 'none';
+      })
+
+    </script>
+</body>
+</html>
