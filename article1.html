@@ -56,7 +56,7 @@ div.webstyle{
     transition: 3s;
 
 }
-div.home{
+a.home{
   grid-area: home;
   padding:5px;
   transition: 3s;
@@ -66,22 +66,9 @@ div.home{
       transition: 3s;
 } 
 
-div.signup:hover,div.signin:hover{
-  
-    color: orange;
-    border-radius: 2px;
-    background-color: green;
-    cursor: pointer;
-    margin-top: 2px;
-    padding-bottom:2px;
 
-}
-
-        body{background-color: whitesmoke;
-            /* background-attachment:fixed;
-        background-image:url(images.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover; */
+        body{
+            background-color: whitesmoke;
         margin: 0;
 
         
@@ -279,7 +266,7 @@ div.about{
         <div class='param' onclick="alert('Coming soon thanks')">&#9776;</div>
         <div class='about' onclick="alert('This page was developed by Joel Fokou')">About</div>
         <div class='webstyle' onclick="alert('Coming soon thanks')">Help</div>
-       <div class='home'><a style='text-decoration:none; color:unset;' href='index1.html'>Home</a></div>
+       <a class='home' style='text-decoration:none; color:unset;' href='index1.html'>Home</a>
    </div>
 
     <h1 id='afterNaveBar'> Don’t be a programmer, Be a problem solver</h1>
