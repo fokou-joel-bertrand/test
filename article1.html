@@ -12,15 +12,15 @@ div.tonyPro{
   background-color: rgb(34, 59, 80);
   color: white;
   font-weight: bold;
-  grid-template-areas: 'tony . . . . .'
-                       'param about webstyle . . home';
+  grid-template-areas: 'tony tony . . .'
+                       'param about webstyle . home';
   grid-column-gap: -30%;
   box-shadow: black 5px 5px 5px;
     background-image: linear-gradient(to right, rgba(13, 206, 158, 0.479), rgba(24, 24, 197, 0.521), rgba(155, 33, 179, 0.459));
 }
 div.tony{
   grid-area: tony;
-  margin-left:-7%;
+  margin-left:1%;
   padding-top: -25%;
   padding:5px;
   font-size: 200%;
@@ -54,21 +54,13 @@ div.webstyle{
     margin-left:-50%;
     width: 100px;
     transition: 3s;
-}
-/* div.signin{
-    grid-area: signin;
-    padding:5px;
-     margin-right: -40%; 
-} */
-div.signup{
-    grid-area: signup;
-    padding:5px;
 
 }
 div.home{
   grid-area: home;
   padding:5px;
   transition: 3s;
+  margin-right: 30px;
 }
  div.param:hover,div.about:hover,div.webstyle:hover, div.article:hover{
       color:orange;background-color: rgb(82, 5, 75);
@@ -225,7 +217,7 @@ div.about{
 
         #afterNaveBar{
         width: 60%; margin-top: 3%; margin-left: 2%;
-        font-size: 120%;
+        font-size: 110%;
     }
         .articleItself{
         margin-right: 2%;
@@ -252,7 +244,7 @@ div.about{
         padding: 0.5%; 
         width: 45%; 
         height: 15%;
-        font-size: 100%;
+        font-size: 90%;
     }
 
     .articleContent{
@@ -260,17 +252,17 @@ div.about{
           grid-template-rows: repeat(1fr,5);
           grid-template-areas: 'articleContent1 articleContent2 articleContent3 articleContent4 articleContent5';
           grid-column-gap: 5px;
-          margin-right: 10%;
-          margin-left: 10%;
-          font-size: 100%;
-          font-family:serif;
-          font-weight:200;
+          margin-right: 5%;
+          margin-left: 5%;
+          font-size: 80%;
+          font-family:sans-serif;
+          font-weight:100;
           
       }
 
     div.tony{
   grid-area: tony;
-  margin-left:-7%;
+  margin-left:1%;
   padding-top: -25%;
   padding:3px;
   font-size: 110%;
