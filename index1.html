@@ -209,13 +209,100 @@ div.signup:hover,div.signin:hover{
         padding-top: 5%;
 
     }
-    @media (max-width:600px){
+
+.aboutMe1{
+  display: grid;
+  margin: 0px 2% 1% 2%;
+  background-color: rgb(41, 101, 105);
+  border-radius: 5px;
+  padding: 1%;
+  grid-template-areas: 'picture information experience skill shcoolPassage';
+  align-items: center;
+  grid-column-gap: 2%;
+  font-family: cursive;
+}
+
+.picture1{
+
+  grid-area: picture;
+  color: white;
+
+}
+.information1{
+
+  grid-area: information;
+
+}
+.experience1{
+
+  grid-area: experience;
+
+
+}
+.skill1{
+  grid-area: skill;
+
+}
+
+.shcoolPassage1{
+
+  grid-area: shcoolPassage;
+
+}
+.shcoolPassage1:hover, .skill1:hover, .experience1:hover, .information1:hover{
+  
+  transition: 2s;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  font-size: 120%;
+  
+}
+
+.shcoolPassage1, .skill1, .experience1, .information1{
+  padding:3%;
+  transition: 2s;
+  font-family: cursive;
+  font-size: 120%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin:2%;
+}
+
+    @media (max-width:700px){
     div.about{
     grid-area: about;
     padding:5px;
     margin-left:-20%;
     width: 100px;
     transition: 3s;
+}
+
+
+
+.aboutMe1{
+  display: grid;
+  margin: 0px 2% 1% 2%;
+  background-color: rgb(41, 101, 105);
+  border-radius: 5px;
+  padding: 1%;
+  grid-template-areas: "picture picture"
+                       "information experience"
+                       "skill shcoolPassage";
+  align-items: center;
+  grid-column-gap: 3%;
+}
+
+.shcoolPassage1, .skill1, .experience1, .information1{
+  padding:3%;
+  transition: 2s;
+  font-family: cursive;
+  font-size: 120%;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
   div.tonyPro{
@@ -325,17 +412,19 @@ div.webstyle{
     </style>
 </head>
 <body id="contactme">
+
+    <a href="#tonytony" style="text-decoration: none; padding:5px; border-radius: 1px; background-color: rgba(0, 0, 0, 0.705); color: unset; font-size: 300%; position: fixed; z-index: 1; right: 4px; bottom: 10px;">&#11014;</a>
     <div id="welcomePage">
         
         <center>
-        <marquee style="color: green; font-size: 290%; font-weight: 500;font-family: serif;">Coding...</marquee>
+        <marquee style="color: green; font-size: 200%; font-weight: 500;font-family: serif;">Coding...</marquee>
         <p id="wlcMessage"></p>
         <button id="welcomeButton" class="english">English</button><button class="francais" id="welcomeButton">Français</button>
         </center>
     </div>
 
     <div class='tonyPro'>
-        <div class='tony'>James Proo</div>
+        <div class='tony' id="tonytony">James Proo</div>
         <div class='param' onclick="alert('Coming soon thanks')">&#9776;</div>
         <div class='about lang63' onclick="alert('This page was developed by Joel Fokou')">About</div>
         <div class='article'></div>
@@ -352,9 +441,16 @@ div.webstyle{
     <img src="git.png" alt="Can't load" width="50px" height="auto" class="item5">
     </div><br>
     <hr>
-    <h2 style='margin-left:2%;' class="lang40">My Bibliography</h2> </div>
+    <!-- <h2 style='margin-left:2%;' class="lang40">My Bibliography</h2> -->
+    <div class="aboutMe1">
+        <h2 class="picture1 lang-2">My Bibliography</h2>
+        <div class="information1"><a class="lang-3" style="text-decoration:none;color:unset;" href="#contact">Contact Me</a></div>
+        <div class="experience1" ><a class="lang-4" style="text-decoration:none;color:unset;" href="#expe">Experiences</a></div>
+        <div class="skill1"><a class="lang-5" style="text-decoration:none;color:unset;" href="#skil">Skills</a></div>
+        <div class="shcoolPassage1"><a class="lang-6" style="text-decoration:none;color:unset;" href="#schoolp">School Passage</a></div>
+        </div>
     <hr>
-    <div class="contactme">
+    <div class="contactme" id="contact">
         <h1 class="lang41">Contact Me</h1>
         <hr class="bibloigraphy">
         <p><strong class="lang42">Name:</strong>          FOKOU</p>
@@ -369,7 +465,7 @@ div.webstyle{
 
     </div><br>
 
-    <div class="skill">
+    <div class="skill" id="skil">
         <h1 id="skill" class="lang49">Skills</h1>
         <hr class="bibloigraphy">
         <h3 class="lang50">Frontend</h3>
@@ -422,7 +518,7 @@ div.webstyle{
     </div><br>
 
      
-    <div class="experience">
+    <div class="experience" id="expe">
 
         <h1 id="experience">Experiences</h1>
         <hr class="bibloigraphy"> 
@@ -465,7 +561,7 @@ div.webstyle{
 
     </div><br>
 
-    <div class="schoolpassage">
+    <div class="schoolpassage" id="schoolp">
         <h1 id="schoolpassage" class="lang20">School passage</h1>
         <hr class="bibloigraphy">
         <h3 class="lang21">* 2002 - 2004 Nursery School</h3>
@@ -491,12 +587,6 @@ div.webstyle{
     <script>
 
           let wlcPage = document.getElementById('welcomePage'); 
-
-          let lang = window.location.href.charAt(window.location.href.length-1);
-
-          if(lang == 1){
-            wlcPage.style.display = 'none';
-          }
 
             setTimeout(()=>{
                 document.getElementById('wlcMessage').innerHTML = 'Welcome to Joel Fokou\'s Portfolio'; 
@@ -635,7 +725,7 @@ document.getElementsByClassName('lang38')[0].textContent = `2018-2019 Génie inf
 
 document.getElementsByClassName('lang39')[0].textContent = `Je termine ma second année avec une moyenne de 18.05 / 20.`;
 
-document.getElementsByClassName('lang40')[0].textContent = `Ma bibliographie.`;
+document.getElementsByClassName('lang40')[0].textContent = `Par Fokou Joel.`;
 
 document.getElementsByClassName('lang41')[0].textContent = `Contactez moi`;
 
@@ -682,6 +772,17 @@ document.getElementsByClassName('lang63')[0].textContent = `À propos`;
 document.getElementsByClassName('lang58')[0].textContent = `Aide`;
 
 document.getElementsByClassName('lang62')[0].textContent = `Techniques de cryptographie symétriques et asymétriques`;
+
+
+document.getElementsByClassName('lang-2')[0].textContent = `Ma bibliographie`;
+
+document.getElementsByClassName('lang-3')[0].textContent = `Contactez moi`;
+
+document.getElementsByClassName('lang-4')[0].textContent = `Experiences`;
+
+document.getElementsByClassName('lang-5')[0].textContent = `Compétences`;
+
+document.getElementsByClassName('lang-6')[0].textContent = `Parcourt Scolaire`;
 
             wlcPage.style.display = 'none';
       })

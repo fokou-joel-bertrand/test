@@ -256,17 +256,19 @@ div.about{
 
     }
 
-
     </style>
 </head>
 <body>
 
+    <a href="#tonytony" style="text-decoration: none; padding:5px; border-radius: 1px; background-color: rgba(0, 0, 0, 0.705); color: unset; font-size: 300%; position: fixed; z-index: 1; right: 4px; bottom: 10px;">&#11014;</a>
+    <div id="welcomePage">
+
     <div class='tonyPro'>
-        <div class='tony' >James Proo</div>
+        <div class='tony' id="tonytony" >James Proo</div>
         <div class='param' onclick="alert('Coming soon thanks')">&#9776;</div>
         <div class='about lang64' onclick="alert('This page was developed by Joel Fokou')">About</div>
         <div class='webstyle lang65' onclick="alert('Coming soon thanks')">Help</div>
-       <a class='home lang66' style='text-decoration:none; color:unset;' href='index1.html?1'>Home</a>
+       <a class='home lang66' style="text-decoration:none; color:unset;" href='index1.html'>Home</a>
    </div>
 
     <h1 id='afterNaveBar' class='lang67'> Don’t be a programmer, Be a problem solver</h1>
@@ -335,6 +337,7 @@ div.about{
         let lang = window.location.href.charAt(window.location.href.length-1);
   
         if(lang == 2){
+
 document.getElementsByClassName('lang64')[0].textContent = `À propos`;
 
 document.getElementsByClassName('lang65')[0].textContent = `Aide`;
@@ -452,8 +455,6 @@ Vous vouliez programmer parce que vous avez vu les choses étonnantes qui peuven
      }
 
     </script>
-
-<!-- <script src="main.js" type="text/javascript"></script> -->
     
 </body>
 </html>
