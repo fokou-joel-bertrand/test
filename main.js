@@ -180,13 +180,20 @@ document.getElementsByClassName('lang58')[0].textContent = `Aide`;
 document.getElementsByClassName('lang62')[0].textContent = `Techniques de cryptographie symétriques et asymétriques`;
             
 
-           // wlcPage.style.display = 'none';
+            wlcPage.style.display = 'none';
 
 
-            if(1){
+            if(document.getElementsByClassName('article')[0].clicked == true)
+              {
+                 alert("button was clicked");
+              }
 
-                function functionSwap();
-            }
+              /*function readValue(e) {
+
+                let text = e.target.textContent;
+
+                console.log(text);
+              }*/
                 
                 function functionSwap()
                 {
